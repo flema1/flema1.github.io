@@ -2,7 +2,7 @@
 
 # PLay UNO!
 
-![screenshot(playUno.png)
+![screenshot](playUno.png)
 
 ## What is [name of game]?
 
