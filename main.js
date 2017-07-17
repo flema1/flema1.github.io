@@ -33,6 +33,9 @@ let handStats=function( numActionCards, numNumMatches, numColorMatches){
     this.colorMatches= numColorMatches
     
 };  
+handStats.prototype.newScore = function(incomingScore){//using prototype to
+  this.wins+=incomingScore;                                //add a function to class "handStats" 
+}
 /*
 let optionsConsiderations=function(placeDownA,placeDownB, palceDownC){
     this.numberMatchesResults=null;
@@ -436,6 +439,8 @@ if (itsXsturn="computer"){
             if (hand.length===1){
                 console.log(`${hand} has called Uno!`);
                 alert(`${hand}says UNO!`); 
+                 hand.newScore(1); //function call to upodate Score
+                console.log (hand.wins);  
             }
             else{
                 console.log(`its ${turnTracker()}'s turn`);
