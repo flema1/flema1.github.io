@@ -33,9 +33,11 @@ let handStats=function( numActionCards, numNumMatches, numColorMatches){
     this.colorMatches= numColorMatches
     
 };  
+ 
 handStats.prototype.newScore = function(incomingScore){//using prototype to
   this.wins+=incomingScore;                                //add a function to class "handStats" 
 }
+
 /*
 let optionsConsiderations=function(placeDownA,placeDownB, palceDownC){
     this.numberMatchesResults=null;
@@ -418,15 +420,28 @@ if (itsXsturn="computer"){
 
 
 
- 
+  /* switch (autoColorChoice){
+            case 0:
+                color = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            //defualt?
+        }*/
 
  //need function to check if player has "uno" cards left
         let callUno=function(hand){
             if (hand.length===1){
                 console.log(`${hand} has called Uno!`);
                 alert(`${hand}says UNO!`); 
-                 hand.newScore(1); //function call to upodate Score
-                console.log (hand.wins);  
+                hand.newScore(1); //function call to upodate Score
             }
             else{
                 console.log(`its ${turnTracker()}'s turn`);
