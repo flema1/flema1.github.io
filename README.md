@@ -43,13 +43,19 @@ let checkActionCards=function(card){
         
 
 ```
-> Code samples, description of challenges you overcame, etc.
+> Challenges: A the major challenge encountered was generating a logic that represents the computer intelligently and autonomously responding to the users game inputs. A general automatic out was achieved by using nested function calls and condition statements. 
+
+Further improvements would allow the program to carry out detailed representation of plausible game outcomes. And rank these against eachother with the goal of outputing the set of functions that result in greatest card loss. Thus improving the program's chance of winning the Uno game.   
+
 
 ## The Making of [Your Game]
 
-> Any credits or notes you feel you should add
+> Any credits/notes:
+ source for uno rules https://github.com/danguilherme/uno
 
 ## Opportunities for Future Growth
 
 > If you had more time to work on your game, what would you do?
+  Impliment a general automatic game play for the computer. 
+ 
 
