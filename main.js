@@ -1,8 +1,4 @@
 
-
-
-
-
 ////////////////////////
 
 
@@ -33,11 +29,9 @@ let handStats=function( numActionCards, numNumMatches, numColorMatches){
     this.colorMatches= numColorMatches
     
 };  
- 
 handStats.prototype.newScore = function(incomingScore){//using prototype to
   this.wins+=incomingScore;                                //add a function to class "handStats" 
 }
-
 /*
 let optionsConsiderations=function(placeDownA,placeDownB, palceDownC){
     this.numberMatchesResults=null;
@@ -79,7 +73,6 @@ colorArray.forEach(function(color) {
 8 Draw Two cards – 2 each in blue, green, red, and yellow
 8 Reverse cards – 2 each in blue, green, red, and yellow
 8 Skip cards – 2 each in blue, green, red, and yellow  
-
 how to target src using jquery
      */
 
@@ -441,7 +434,8 @@ if (itsXsturn="computer"){
             if (hand.length===1){
                 console.log(`${hand} has called Uno!`);
                 alert(`${hand}says UNO!`); 
-                hand.newScore(1); //function call to upodate Score
+                 hand.newScore(1); //function call to upodate Score
+                console.log (hand.wins);  
             }
             else{
                 console.log(`its ${turnTracker()}'s turn`);
@@ -507,7 +501,6 @@ $compHand.each(function( index ) {
 /*
  var array = [{y:"t", x:2},{y:"z",x:5},{y:"t",x: 9},{y:"k",x:5},{y:"t",x:11}];
  var removed;
-
 for (let i=0; i<array.length;i++){
   if (array[i].x===5){
       console.log (i);
@@ -639,6 +632,3 @@ callUno(computerHand);
 
 console.log (discardPile); 
 console.log (computerHand.length);
-
-
-///
