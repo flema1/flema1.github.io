@@ -1,8 +1,8 @@
 # game1
 
-# [Name of Game]
+# PLay UNO!
 
-[screenshot]
+![screenshot(playUno.png)
 
 ## What is [name of game]?
 
